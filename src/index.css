@@ -18,7 +18,7 @@ All colors MUST be HSL.
     
     /* Dashboard specific colors */
     --success: 142 76% 36%; /* Green for positive metrics */
-    --warning: 38 92% 50%; /* Orange for alerts */
+    --warning: var(--kai-silver); /* Silver for alerts - brand aligned */
     --danger: 0 84% 60%; /* Red for critical issues */
     
     /* Background and surfaces */

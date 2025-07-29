@@ -46,7 +46,7 @@ const Dashboard = () => {
     { name: 'Instagram', value: 35, color: 'hsl(var(--kai-silver))' },
     { name: 'PropertyFinder', value: 28, color: 'hsl(var(--kai-charcoal))' },
     { name: 'Bayut', value: 22, color: 'hsl(var(--success))' },
-    { name: 'Referrals', value: 15, color: 'hsl(var(--warning))' }
+    { name: 'Referrals', value: 15, color: 'hsl(var(--kai-silver))' }
   ];
 
   return (
@@ -63,9 +63,9 @@ const Dashboard = () => {
 
       {/* Critical Alerts Panel */}
       <div className="mb-6">
-        <Card className="card-kai border-warning/50">
+        <Card className="card-kai border-kai-silver/30">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-warning">
+            <CardTitle className="flex items-center gap-2 text-kai-silver">
               <AlertTriangle className="h-5 w-5" />
               Critical Alerts
             </CardTitle>
@@ -75,10 +75,10 @@ const Dashboard = () => {
               <Badge variant="destructive" className="text-xs">
                 3 Deals Stalled &gt; 14 Days
               </Badge>
-              <Badge variant="outline" className="text-warning border-warning text-xs">
+              <Badge variant="outline" className="text-kai-silver border-kai-silver text-xs">
                 5 Follow-ups Overdue
               </Badge>
-              <Badge variant="outline" className="text-warning border-warning text-xs">
+              <Badge variant="outline" className="text-kai-silver border-kai-silver text-xs">
                 2 Listings Need Updates
               </Badge>
             </div>
@@ -114,7 +114,7 @@ const Dashboard = () => {
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary">18</div>
                   <div className="text-sm text-muted-foreground">Appointments</div>
-                  <div className="text-xs text-warning">-3% vs last month</div>
+                  <div className="text-xs text-muted-foreground">-3% vs last month</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary">6</div>
@@ -282,7 +282,7 @@ const Dashboard = () => {
           <CardContent className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center">
-                <div className="text-xl font-bold text-warning">12</div>
+                <div className="text-xl font-bold text-kai-silver">12</div>
                 <div className="text-xs text-muted-foreground">Pending Follow-ups</div>
               </div>
               <div className="text-center">
@@ -321,7 +321,7 @@ const Dashboard = () => {
             <div className="space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-sm">Pending Documents</span>
-                <Badge variant="outline" className="text-warning border-warning">7</Badge>
+                <Badge variant="outline" className="text-kai-silver border-kai-silver">7</Badge>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-sm">Overdue Listings</span>
@@ -333,7 +333,7 @@ const Dashboard = () => {
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-sm">Manual Escalations</span>
-                <Badge variant="outline" className="text-warning border-warning">2</Badge>
+                <Badge variant="outline" className="text-kai-silver border-kai-silver">2</Badge>
               </div>
             </div>
             
@@ -404,7 +404,7 @@ const Dashboard = () => {
               <div className="text-xs text-success">Through automation</div>
             </div>
             <div className="text-center p-4 rounded-lg bg-kai-charcoal/50">
-              <div className="text-2xl font-bold text-warning mb-2">8.4</div>
+              <div className="text-2xl font-bold text-kai-silver mb-2">8.4</div>
               <div className="text-sm text-muted-foreground mb-1">Lead Velocity</div>
               <div className="text-xs text-muted-foreground">Days to conversion</div>
             </div>
