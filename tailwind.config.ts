@@ -18,7 +18,23 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				league: ['League Spartan', 'sans-serif'],
+			},
 			colors: {
+				// KAI Brand Colors
+				kai: {
+					onyx: 'hsl(var(--kai-onyx))',
+					silver: 'hsl(var(--kai-silver))',
+					charcoal: 'hsl(var(--kai-charcoal))',
+					white: 'hsl(var(--kai-white))',
+					'silver-dark': 'hsl(var(--kai-silver-dark))',
+				},
+				// Dashboard Colors
+				success: 'hsl(var(--success))',
+				warning: 'hsl(var(--warning))',
+				danger: 'hsl(var(--danger))',
+				// Base System Colors
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -51,17 +67,17 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
-				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-metallic': 'var(--gradient-metallic)',
+				'gradient-background': 'var(--gradient-background)',
+				'gradient-card': 'var(--gradient-card)',
+			},
+			boxShadow: {
+				'kai-metallic': 'var(--shadow-metallic)',
+				'kai-card': 'var(--shadow-card)',
+				'kai-glow': 'var(--shadow-glow)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
